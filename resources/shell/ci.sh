@@ -26,7 +26,7 @@ function ci_prepare_release() {
 
 function ci_build_and_deploy() {
   pushd "$CONSOLE_REPO_PATH"
-
+  RELEASE_VERSION="community-edition-$RELEASE_VERSION"
   mvn -Prelease-package -Dmaven.test.skip=true clean install -U
 
   mkdir dist
