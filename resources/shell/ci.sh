@@ -29,7 +29,7 @@ function ci_build_and_deploy() {
   mvn -Prelease-package -Dmaven.test.skip=true clean install -U
 
   mkdir dist
-  cp ../../target/*.tar.gz dist/
+  cp /home/ubuntu/actions-runner/_work/asp-manager-console/asp-manager-console/target/*.gz dist/
   create_github_release "$RELEASE_VERSION" "dist/*"
   popd
 }
