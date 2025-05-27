@@ -29,10 +29,8 @@ function ci_build_and_deploy() {
   mvn -Prelease-package -Dmaven.test.skip=true clean install -U
 
   mkdir dist
-  cp asp-manager-dist/rest/target/*.tar.gz dist/
-  cp asp-manager-dist/task/target/*.tar.gz dist/
+  cp ./target/*.tar.gz dist/
   create_github_release "$RELEASE_VERSION" "dist/*"
-
   popd
 }
 
