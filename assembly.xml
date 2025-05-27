@@ -1,0 +1,24 @@
+<assembly>
+  <id>${project.version}</id>
+  <includeBaseDirectory>true</includeBaseDirectory>
+  <formats>
+     <format>dir</format>
+    <format>tar.gz</format>
+  </formats>
+  <fileSets>
+    <fileSet>
+      <directory>conf</directory>
+      <outputDirectory>conf</outputDirectory>
+    </fileSet>
+    <fileSet>
+      <directory>sbin</directory>
+      <outputDirectory>bin</outputDirectory>
+    </fileSet>
+  </fileSets>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>lib</outputDirectory>
+      <unpack>false</unpack>
+    </dependencySet>
+  </dependencySets>
+</assembly>
