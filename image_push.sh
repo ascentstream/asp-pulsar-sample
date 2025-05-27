@@ -5,7 +5,7 @@ echo  $BINDIR
 version="$1"
 registry="$2"
 
-IMG=${registry}/ascentstream/asp-playgroud-sample:${version} make docker-buildx
+IMG=${registry}/ascentstream/asp-pulsar-sample:${version} make docker-buildx
 
 
 

@@ -218,7 +218,7 @@ public class NotifyCase {
 
     public void start(Map<String, String> cluster, PulsarAdmin pulsarAdmin) {
         try {
-            String namespace = cluster.getOrDefault("sample.pulsar.namespace", "public/demo");
+            String namespace = cluster.getOrDefault("sample.pulsar.namespace", "public/default");
             String topic = namespace + "/notify";
             PulsarClientUtil.createNamespace(pulsarAdmin, namespace);
             PulsarClient client = PulsarClientUtil.getPulsarClient(cluster);

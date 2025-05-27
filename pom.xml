@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ascentstream.paltform</groupId>
-    <artifactId>asp-playgroud-sample</artifactId>
+    <artifactId>asp-pulsar-sample</artifactId>
     <version>asp-console-community-edition-1.0.0</version>
     <packaging>jar</packaging>
     <properties>
@@ -113,6 +113,6 @@
                 </executions>
             </plugin>
         </plugins>
-        <finalName>asp-playgroud-sample</finalName>
+        <finalName>asp-pulsar-sample</finalName>
     </build>
 </project>

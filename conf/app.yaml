@@ -2,5 +2,5 @@ clusters:
   - serviceUrl: "pulsar://192.168.1.33:6650"
     serviceHttpUrl: "http://192.168.1.33:8080"
     token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiJ9.aR62CjxgMCbpwHeyow3zEOWpLNWL6GbfEZ2wstuF_uI"
-    sample.pulsar.namespace: "public/demo"
+    sample.pulsar.namespace: "public/default"
     case: "OrderCase,NotifyCase,ActivityCase"
