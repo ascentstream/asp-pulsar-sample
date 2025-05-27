@@ -14,6 +14,7 @@ function list_functions() {
 
 function ci_prepare_release() {
   pushd "$CONSOLE_REPO_PATH"
+  RELEASE_VERSION="community-edition-$RELEASE_VERSION"
   echo "Release version: $RELEASE_VERSION"
 
   readonly BRANCH_NAME=release-branch-"$RELEASE_VERSION"
